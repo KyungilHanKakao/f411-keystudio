@@ -174,17 +174,7 @@ void StartTask03(void const * argument)
   /* Infinite loop */
   for(;;)
   {
-	  HAL_GPIO_TogglePin(D9_GPIO_Port,D9_Pin);
-	  osDelay(1000);
-	  HAL_GPIO_TogglePin(D9_GPIO_Port,D9_Pin);
-	  HAL_GPIO_TogglePin(D10_GPIO_Port,D10_Pin);
-	  osDelay(1000);
-	  HAL_GPIO_TogglePin(D10_GPIO_Port,D10_Pin);
-	  HAL_GPIO_TogglePin(D11_GPIO_Port,D11_Pin);
-	  osDelay(1000);
-	  HAL_GPIO_TogglePin(D11_GPIO_Port,D11_Pin);
-	  osDelay(1000);
-
+    osDelay(1);
   }
   /* USER CODE END StartTask03 */
 }
